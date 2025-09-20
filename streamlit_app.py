@@ -33,6 +33,7 @@ selected_year = st.selectbox("Select Year", df['Year'].unique())
 filtered_data = df[df['Year'] == selected_year]
 st.write(filtered_data)
 st.write("""
+
 The graph illustrates the trajectory of global average temperatures from 1750 to 2015. 
 For more than a century before the mid-1800s, temperatures remained relatively stable, 
 though measurements from that period carry high uncertainty due to limited observational coverage. 
@@ -42,5 +43,6 @@ with recent decades showing the sharpest and most consistent rise,
 reaching the highest recorded values near 20 °C. 
 The narrowing uncertainty band reflects the reliability of modern climate data, 
 strengthening confidence in these trends.
+
 """)
 
