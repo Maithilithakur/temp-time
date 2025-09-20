@@ -5,7 +5,7 @@ import plotly.express as px
 st.title("🌍 Climate Dashboard: Global Temperature Trends")
 
 # Load data
-df = pd.read_csv('/workspaces/temp-time/GlobalLandTemperaturesByCountry.csv.zip', compression='zip')
+df = pd.read_csv('GlobalLandTemperaturesByCountry.csv.zip')
 df['dt'] = pd.to_datetime(df['dt'])
 df['Year'] = df['dt'].dt.year
 climate = df.groupby('Year').agg({
